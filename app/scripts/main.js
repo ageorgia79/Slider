@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function slideShow() {
-  var showing = $('#slider .is-showing');
+  var showing = $('#imageslider .is-showing');
   var next = showing.next().length ? showing.next(): showing.parent().children(':first');
 
 
