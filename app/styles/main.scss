@@ -2,41 +2,60 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
-
-
+body {
+    background-color: black;
+}
 
 .container {
-    width: 980px;
-    margin: 0 auto;
+    margin: 90px auto;
+    height: 620px;
+    width: 1000px;
+    border-radius: 20px;
+    background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4RG23GArkLZTBUu8ge8y4zBeMi2ZNrTuHrDHg0U0A8wcn3GLa');
+    background-size: cover;
+    border: 6px solid #000000;
+    border-radius: 11px;
+    box-shadow: 0px 0px 300px #540400;
 }
 
 #slider {
+    margin: 60px auto;
     height: 400px;
     width: 800px;
     overflow: hidden;
-    margin: 30px auto;
+
 }
 
-#slider > img {
-    height: 400px;
-    width: 800px;
-    float: left;
+#slider img {
     display: none;
-}
-
-a {
-    padding: 5px 10px;
-    background-color: #F0F0F0;
-    margin-top: 30px;
-    text-decoration: none;
-    color: #666;
-}
-
-a.left {
-    float: left;
-}
-
-a.right {
-    float: right;
+    border-radius: 8px 8px;
+    position: relative;
+    top: 80px;
 
 }
+
+#slider .is-showing {
+    display: inline;
+}
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+ 
+
+ 
+
+
+
+
+

@@ -1,25 +1,14 @@
-sliderInt = 1;
-sliderNext = 2;
-
 $(document).ready(function(){
-$("#slider > img#1").fadeIn(300);
-startSlider();
-});
+  slideShow();
+})
 
-function startSlider(){
-  count = $("#slider > img").size();
-  loop = setInterval(function(){
+function slideShow() {
+  var showing = $('#slider .is-showing');
+  var next = showing.next().length ? showing.next(): showing.parent().children(':first');
 
-    if(sliderNext > count){
-      sliderNext = 1;
-      sliderInt = 1;
-    };
 
-    $("#slider > img").fadeOut(300);
-    $("#slider > img#" + sliderNext).fadeIn(300);
-
-    sliderInt = sliderNext;
-    sliderNext = sliderNext + 1;
-
-  },3000)
+showing.fadeOut(800, function(){
+  next.fadeIn(800).addClass('is-showing');
+}).removeClass('is-showing');
+setTimeout(slideShow, 2500);
 }
