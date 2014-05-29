@@ -23,7 +23,6 @@ function imageChanger(arrayImages, delayTime) {
     $('#slider-box').empty();
     $('#slider-box').append('<img src="' + arrayImages[numCounter] + '">');
     
-
     numCounter += 1;
 
     if (numCounter === arrayImages.length) {
@@ -31,9 +30,10 @@ function imageChanger(arrayImages, delayTime) {
     }
   }, delayTime);
 }
-  
 
 imageChanger(arrayImages, 2500);    
+  
+
 
 
 

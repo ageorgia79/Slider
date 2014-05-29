@@ -12,3 +12,19 @@
         });
     });
 })();
+
+describe('the image slider', function() {
+
+  var slider = $('.slider-box');
+
+  var box = $('.slider-box');
+
+  $('.slider-box').val(12);
+
+  it('should render twelve images consecutively in a loop', function(){
+    expect(slider-box).to.equal(12);
+  })
+
+
+})
+
