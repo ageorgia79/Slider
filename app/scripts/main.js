@@ -24,6 +24,7 @@ function imageChanger(arrayImages, delayTime) {
     $('#slider-box').append('<img src="' + arrayImages[numCounter] + '">');
     
     numCounter += 1;
+    
 
     if (numCounter === arrayImages.length) {
       numCounter = 0;
